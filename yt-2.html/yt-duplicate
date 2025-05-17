@@ -1,0 +1,2793 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Yt Clone
+    </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/video.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+
+  </head>
+  <body>
+    <div class="header">
+      <div class="left-section">
+        <img class="hamburger-menu" src="icons/hamburger-menu.svg">
+        <img class="youtube-logo"src="icons/youtube-logo.svg">
+      </div>
+      <div class="middle-section">
+        <input class="search-bar"type="text" placeholder="Search">
+        <button class="search-button">
+          <img class="search-icon" src="icons/search.svg">
+          <div class="tooltip">
+            Search
+          </div>
+        </button>
+        <button class="voice-search-button">
+          <img class="voice-search-icon" src="icons/voice-search-icon.svg">
+          <div class="tooltip">
+            Search with your voice
+          </div>
+        </button>
+      </div>
+      <div class="right-section">
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="icons/upload.svg">
+          <div class="tooltip">
+            Create 
+          </div>
+        </div>
+        <div class="youtube-apps-container">
+          <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
+          <div class="tooltip">
+            Youtube apps 
+          </div>
+        </div>
+        <div class="notification-icon-container">
+          <img class="notifications-icon" src="icons/notifications.svg">
+          <div class="notifications-count">3</div>
+          <div class="tooltip">
+            Notifications
+          </div>
+        </div>
+        <img class="current-user-picture" src="channels/my-channel.jpeg">
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <div class="sidebar-link">
+        <img src="icons/home.svg">
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/explore.svg">
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/subscriptions.svg">
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/originals.svg">
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/youtube-music.svg">
+        <div>Youtube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/library.svg">
+        <div>Library</div>
+      </div>
+    </div>
+
+    <!-- <div class="video-grid">
+      <div class="video-preview">
+
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="https://i.ytimg.com/vi/A_gA2bT7ukE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB9kheSA7RUfAKrY2Kwk5Z2JdGGMg">
+          <div class="video-time"> 14:20 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-1.jpeg">
+          </div>
+  
+          <div class="video-info">
+            <p class="video-title">
+              Talking Tech and AI with Google CEO Sundar Pichai!
+            </p>
+        
+            <p class="video-author">
+              Marques Browniee
+            </p>
+        
+            <p class="video-stats">
+              3.4M views &#183; 6 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-2.webp">
+          <div class="video-time"> 8:22 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-2.jpeg">
+          </div>
+  
+          <div class="video-info">
+            <p class="video-title">
+              Try Not To Laugh Challenge #9
+            </p>
+        
+            <p class="video-author">
+              Markiplier
+            </p>
+        
+            <p class="video-stats">
+              19M views &#183; 4 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-3.webp">
+          <div class="video-time"> 9:13 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-3.jpeg">
+          </div>
+  
+          <div class="video-info">
+            <p class="video-title">
+              Crazy Tik Toks Taken Moments Before DISASTER
+            </p>
+        
+            <p class="video-author">
+              SSSniperWolf
+            </p>
+        
+            <p class="video-stats">
+              12M views &#183; 1 year ago
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-4.webp">
+          <div class="video-time"> 22:09 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-4.jpeg">
+          </div>
+  
+          <div class="video-info">
+            <p class="video-title">
+              The Simplest Math Problem No One Can Solve - Collatz Conjecture
+            </p>
+        
+            <p class="video-author">
+              Veritasium
+            </p>
+        
+            <p class="video-stats">
+              18M views &#183; 4 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-5.webp">
+          <div class="video-time"> 11:17 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-5.jpeg">
+          </div>
+  
+          <div class="video-info">
+            <p class="video-title">
+              Kadane's Algorithm to Maximum Sum Subarray Problem
+            </p>
+        
+            <p class="video-author">
+              CS Dojo
+            </p>
+        
+            <p class="video-stats">
+              519K views &#183; 5 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-6.webp">
+          <div class="video-time"> 19:59 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-6.jpeg">
+          </div>
+  
+          <div class="video-info">
+            <p class="video-title">
+              Anything You Can Fit In The Circle I'll Pay For
+            </p>
+        
+            <p class="video-author">
+              MrBeast
+            </p>
+        
+            <p class="video-stats">
+              141 views &#183; 1 year ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-7.webp">
+          <div class="video-time"> 10:13 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-7.jpeg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Why Planes Don't Fly Over Tibet
+            </p>
+        
+            <p class="video-author">
+              RealLifeLore
+            </p>
+        
+            <p class="video-stats">
+              6.6M views &#183; 1 year ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-8.webp">
+          <div class="video-time"> 7:12 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-8.jpeg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Inside The World's Biggest Passenger Plane
+            </p>
+        
+            <p class="video-author">
+              Tech Vision
+            </p>
+        
+            <p class="video-stats">
+              3.7M views &#183; 10 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-9.webp">
+          <div class="video-time"> 13:17 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-9.jpeg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              The SECRET to Super Human STRENGTH
+            </p>
+        
+            <p class="video-author">
+              ThenX
+            </p>
+        
+            <p class="video-stats">
+              20M views &#183; 3 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-10.webp">
+          <div class="video-time"> 7:53 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-10.jpeg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              How The World's Largest Cruise Ship Makes 30,000 Meals Every Day
+            </p>
+        
+            <p class="video-author">
+              Business Insider
+            </p>
+        
+            <p class="video-stats">
+              14M views &#183; 1 year ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-11.webp">
+          <div class="video-time"> 4:10 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-11.jpeg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Dubai's Crazy Underwater Train and Other Things #Only in Dubai
+            </p>
+        
+            <p class="video-author">
+              Destination Tips
+            </p>
+        
+            <p class="video-stats">
+              3M views &#183; 1 year ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-12.webp">
+          <div class="video-time"> 4:51 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-12.jpeg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              What would happen if you didn't drink water? - Mia Nacamulli
+            </p>
+        
+            <p class="video-author">
+              TED-Ed
+            </p>
+        
+            <p class="video-stats">
+              12M views &#183; 5 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-13.webp">
+          <div class="video-time"> 21:35 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-13.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Ep 1323 - Pressure Cooker Ka Confusion | Taarak Mehta Ka Ooltah Chashmah
+            </p>
+        
+            <p class="video-author">
+              Taarak Mehta Ka Ooltah Chashmah
+            </p>
+        
+            <p class="video-stats">
+              37M views &#183; 7 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-14.webp">
+          <div class="video-time"> 1:52:56 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-14.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Stree 2 Full Movie | New Hindi Horror Movie 2024
+            </p>
+        
+            <p class="video-author">
+              Movie Is Back
+            </p>
+        
+            <p class="video-stats">
+              10M views &#183; 2 days ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-15.webp">
+          <div class="video-time"> 31:23 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-15.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Love Adhura Episode 1 | Full Episode 
+            </p>
+        
+            <p class="video-author">
+              Amazon miniTV
+            </p>
+        
+            <p class="video-stats">
+              830K views &#183; 3 weeks ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-16.webp">
+          <div class="video-time"> 3:07 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-16.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              O Meri Laila | Laila Majnu | Atif Aslam, Jyotica Tangri
+            </p>
+        
+            <p class="video-author">
+              Zee Music Company
+            </p>
+        
+            <p class="video-stats">
+              6.7M views &#183; 5 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-17.webp">
+          <div class="video-time"> 3:06 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-17.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Fakt Purusho Maate | Yash | Mitra | Esha | Drshan Jariwala | Jay
+            </p>
+        
+            <p class="video-author">
+              Jannock Films
+            </p>
+        
+            <p class="video-stats">
+              2.5M views &#183; 2 weeks ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-18.webp">
+          <div class="video-time"> 1:12:26 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-18.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              The IIT Dream | Stand-Up Comedy Special By Madhur Virli
+            </p>
+        
+            <p class="video-author">
+              Madhur Virli
+            </p>
+        
+            <p class="video-stats">
+              4.6M views &#183; 2 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-19.webp">
+          <div class="video-time"> 15:51 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-19.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              You're not dumb: How to FIX your ATTENTION SPAN
+            </p>
+        
+            <p class="video-author">
+              Amy Wang
+            </p>
+        
+            <p class="video-stats">
+              933K views &#183; 1 month ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-21.webp">
+          <div class="video-time"> 15:26 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-21.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              What should you do in 2nd year of college? 2nd Year Roadmap
+            </p>
+        
+            <p class="video-author">
+              Apna College
+            </p>
+        
+            <p class="video-stats">
+              588K views &#183; 1 year ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-20.webp">
+          <div class="video-time"> 19:16 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-20.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              The Lavari Show EP 2 ft. Viraj Ghelani | Nakabandi Stories
+            </p>
+        
+            <p class="video-author">
+              The Comedy Factory
+            </p>
+        
+            <p class="video-stats">
+              327K views &#183; 2 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-22.webp">
+          <div class="video-time"> 4:00:55 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-22.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              4-HOUR Study With Me &#183; Rain Sounds + Lofi bgm &#183; Pomodoro
+            </p>
+        
+            <p class="video-author">
+              Emmalilyn
+            </p>
+        
+            <p class="video-stats">
+              288K views &#183; 2 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-23.webp">
+          <div class="video-time"> 27:11 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-23.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Why is Ola Electric Hitting back to back upper circuits?
+            </p>
+        
+            <p class="video-author">
+              CA Rachana Phadke Ranade
+            </p>
+        
+            <p class="video-stats">
+              39K views &#183; Streamed 21 hours ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-24.webp">
+          <div class="video-time"> 1:45:52 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-24.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Tangled Full Movie In Hindi Dubbed | Latest Hollywood Action Movie
+            </p>
+        
+            <p class="video-author">
+              Techno Tazzy
+            </p>
+        
+            <p class="video-stats">
+              342K views &#183; 14 hours ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-25.webp">
+          <div class="video-time"> 5:58 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-25.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Stupid Questions With Katrina Kaif And Anushka Sharma | Zero Interview
+            </p>
+        
+            <p class="video-author">
+              MissMalini
+            </p>
+        
+            <p class="video-stats">
+              3.6M views &#183; 5 Years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-26.webp">
+          <div class="video-time"> 3:21 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-26.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Sabrina Carpenter - Espresso (Official Video)
+            </p>
+        
+            <p class="video-author">
+              Sabrina Carpenter
+            </p>
+        
+            <p class="video-stats">
+              134M views &#183; 4 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-27.webp">
+          <div class="video-time"> 5:16 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-27.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              What happened in the Kolkata hospital?
+            </p>
+        
+            <p class="video-author">
+              Brut India
+            </p>
+        
+            <p class="video-stats">
+              4.7K views &#183; 5 days ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-28.webp">
+          <div class="video-time"> 17:02 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-28.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Sadhguru On How To Manifest What You Really Want
+            </p>
+        
+            <p class="video-author">
+              Sadhguru
+            </p>
+        
+            <p class="video-stats">
+              21M views &#183; 4 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-29.webp">
+          <div class="video-time"> 3:02:04 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-28.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Soothing Relaxation: Relaxating Piano Music & Water Sounds For Sleep
+            </p>
+        
+            <p class="video-author">
+              Soothing Relaxation
+            </p>
+        
+            <p class="video-stats">
+              218M views &#183; 7 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-30.webp">
+          <div class="video-time"> 12:17 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-30.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              i read books recommended by Ananya Pandey (and i legit cried)
+            </p>
+        
+            <p class="video-author">
+              Amolika Maheshwari
+            </p>
+        
+            <p class="video-stats">
+              3K views &#183; 1 month ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-31.webp">
+          <div class="video-time"> 9:17 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-31.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Types of Shoppers In Every Mall | MostlySane
+            </p>
+        
+            <p class="video-author">
+              MostlySane
+            </p>
+        
+            <p class="video-stats">
+              8.7M views &#183; 5 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-32.webp">
+          <div class="video-time"> 55:35 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-32.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Lecture 14: Binary Search Interview Questions
+            </p>
+        
+            <p class="video-author">
+              CodeHelp - by Babbar
+            </p>
+        
+            <p class="video-stats">
+              757K views &#183; 2 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-33.webp">
+          <div class="video-time"> 26:06 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-33.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Bassi & Prashasti: Relationships, Secrets & Fan Incidents
+            </p>
+        
+            <p class="video-author">
+              Netflix India
+            </p>
+        
+            <p class="video-stats">
+              932K views &#183; 5 days ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-34.webp">
+          <div class="video-time"> 4:47 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-34.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Stunning Sangeet Performance by the Bride and Her Friends
+            </p>
+        
+            <p class="video-author">
+              Aperina Studios
+            </p>
+        
+            <p class="video-stats">
+              30M views &#183; 1 year ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-35.webp">
+          <div class="video-time"> 8:15 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-35.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Who Has The Best Blue Tokai Order? BuzzFeed India
+            </p>
+        
+            <p class="video-author">
+              BuzzFeed India
+            </p>
+        
+            <p class="video-stats">
+              140K views &#183; 9 days ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-36.webp">
+          <div class="video-time"> 16:57 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-36.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              VLSI Roadmap | How to Start Career In VLSI?
+            </p>
+        
+            <p class="video-author">
+              VLSI Point
+            </p>
+        
+            <p class="video-stats">
+              28K views &#183; 1 month ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-37.webp">
+          <div class="video-time"> 1:06:29 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-37.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Kolkata R@pe & Murder Cae Exposed | Exclusive Interview
+            </p>
+        
+            <p class="video-author">
+              Dr Siddhant Bhargava
+            </p>
+        
+            <p class="video-stats">
+              88K views &#183; 8 hours ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-38.webp">
+          <div class="video-time"> 1:30 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-38.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              5 of my favourite reads books | Prajakta Kohli | Books
+            </p>
+        
+            <p class="video-author">
+              Prajakta X Tuhin
+            </p>
+        
+            <p class="video-stats">
+              4.5K views &#183; 9 days ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-39.webp">
+          <div class="video-time"> 13:35 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-39.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Atlassian Bengaluru office Tour | Life at Atlassian
+            </p>
+        
+            <p class="video-author">
+              Harshit Trehan
+            </p>
+        
+            <p class="video-stats">
+              81K views &#183; 2 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-40.webp">
+          <div class="video-time"> 24:26 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-40.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              M1 L4 | Operational Amplifiers, configurations
+            </p>
+        
+            <p class="video-author">
+              Explore Electronnics
+            </p>
+        
+            <p class="video-stats">
+              26K views &#183; 2 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-41.webp">
+          <div class="video-time"> 11:18 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-41.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Hilarious Gujarati Food Challenge With Viraj Ghelani | Sahiba Bali
+            </p>
+        
+            <p class="video-author">
+              Zomato
+            </p>
+        
+            <p class="video-stats">
+              1.4M views &#183; 2 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-42.webp">
+          <div class="video-time"> 14:06 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-42.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Nischay ne Abhishek ko Goa se wapis ghar bula liya
+            </p>
+        
+            <p class="video-author">
+              Dimple Malhan Vlogs
+            </p>
+        
+            <p class="video-stats">
+              1.1M views &#183; 2 days ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-43.webp">
+          <div class="video-time"> 31:35 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-43.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Trading For Beginners In Share Market | How To Start Trading
+            </p>
+        
+            <p class="video-author">
+              Neeraj Joshi
+            </p>
+        
+            <p class="video-stats">
+              1.3M views &#183; 5 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-44.webp">
+          <div class="video-time"> 7:02</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-44.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Smart India Hackathon 2024 | Complete Roadmap for SIH 2024
+            </p>
+        
+            <p class="video-author">
+              Codehunters
+            </p>
+        
+            <p class="video-stats">
+              10K views &#183; 5 days ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-45.webp">
+          <div class="video-time"> 15:33 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-45.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Main Aur Mumbai | Aakash Gupta | Stand-up Comedy
+            </p>
+        
+            <p class="video-author">
+              Aakash Gupta
+            </p>
+        
+            <p class="video-stats">
+              8M views &#183; 2 weeks ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-46.webp">
+          <div class="video-time"> 11:23 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-46.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Zener Diode as Voltage Regulator (Part 2)
+            </p>
+        
+            <p class="video-author">
+              Neso Academy
+            </p>
+        
+            <p class="video-stats">
+              314K views &#183; 8 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-47.webp">
+          <div class="video-time"> 15:17 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-47.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Competitive Programming Roadmap | 0 to 6
+            </p>
+        
+            <p class="video-author">
+              Priyansh Agarwal
+            </p>
+        
+            <p class="video-stats">
+              155K views &#183; 8 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-48.webp">
+          <div class="video-time"> 18:42 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-48.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              The Ones With The Pranks | Friends
+            </p>
+        
+            <p class="video-author">
+              Friends
+            </p>
+        
+            <p class="video-stats">
+              1M views &#183; 3 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-49.webp">
+          <div class="video-time"> 59:28 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-49.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Priyanka Chopra Jonas | Break The Roles Special | Anupam Chopra
+            </p>
+        
+            <p class="video-author">
+              Film Companion Studios
+            </p>
+        
+            <p class="video-stats">
+              1.1M views &#183; 1 year ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-50.webp">
+          <div class="video-time"> 10:57 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-50.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              10 books for beginners - Easy book recommendations
+            </p>
+        
+            <p class="video-author">
+              HeyAnushka
+            </p>
+        
+            <p class="video-stats">
+              82K views &#183; 3 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-51.webp">
+          <div class="video-time"> 9:55 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-51.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              uni life in london
+            </p>
+        
+            <p class="video-author">
+              Esther Lee
+            </p>
+        
+            <p class="video-stats">
+              3.4M views &#183; 2 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-52.webp">
+          <div class="video-time"> 19:39 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-52.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              HOW TO MAINTAIN CLEAR SKIN WITHOUT SPENDING MONEY
+            </p>
+        
+            <p class="video-author">
+              alessya farrugai
+            </p>
+        
+            <p class="video-stats">
+              4.5M views &#183; 1 year ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-53.webp">
+          <div class="video-time"> 1:50:30 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-53.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Ratatouille Full Movie in Hindi Dubbed | Latest Hollywood Action Movie
+            </p>
+        
+            <p class="video-author">
+              Zehr Vibe
+            </p>
+        
+            <p class="video-stats">
+              4.1K views &#183; 4 hours ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-54.webp">
+          <div class="video-time"> 20:51 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-54.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Prajakta Koli On Her Relationship With Vrishank, Eve Teasing & Rohit Saraf
+            </p>
+        
+            <p class="video-author">
+              Hauterrfly
+            </p>
+        
+            <p class="video-stats">
+              274K views &#183; 7 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-55.webp">
+          <div class="video-time"> 11:54 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-55.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              How I Cracked GATE in Just 6 Months? | My GATE Preparation Journey
+            </p>
+        
+            <p class="video-author">
+              Rahuram Chanthrakumar
+            </p>
+        
+            <p class="video-stats">
+              35K views &#183; 10 days ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-56.webp">
+          <div class="video-time"> 22:03 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-56.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              20 Min Morning Yoga Flow | Every Day Full Body Yoga For All Levels
+            </p>
+        
+            <p class="video-author">
+              Charlie Follows
+            </p>
+        
+            <p class="video-stats">
+              1.9M views &#183; 11 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-57.webp">
+          <div class="video-time"> 26:34 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-57.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Our Arranged Love Story
+            </p>
+        
+            <p class="video-author">
+              Pooja & Karan bafna
+            </p>
+        
+            <p class="video-stats">
+              613K views &#183; 1 year ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-58.webp">
+          <div class="video-time"> 3:55 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-58.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Hanumankind - Big Dawgs | Ft. Kalmi (Official Music Video)
+            </p>
+        
+            <p class="video-author">
+              Hanumankind
+            </p>
+        
+            <p class="video-stats">
+              61M views &#183; 1 month ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-59.webp">
+          <div class="video-time"> 20:32 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-59.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Akshay Kumar x Harsh Gujral | Roast Standup Comedy
+            </p>
+        
+            <p class="video-author">
+              Harsh gujral
+            </p>
+        
+            <p class="video-stats">
+              5.5M views &#183; 2 days ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-60.webp">
+          <div class="video-time"> 5:39 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-60.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Shivaji Nu Halardu | Amit Dhorda Live In Concert | Gujarati Folk.
+            </p>
+        
+            <p class="video-author">
+              Amit Dhorda
+            </p>
+        
+            <p class="video-stats">
+              160K views &#183; 2 weeks ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-61.webp">
+          <div class="video-time"> 31:08 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-61.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Non Stop Comedy Scene | Siddharth Randeria
+            </p>
+        
+            <p class="video-author">
+              Gujarati Comedy
+            </p>
+        
+            <p class="video-stats">
+              3.2M views &#183; 1 year ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-62.webp">
+          <div class="video-time"> 2:36 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-62.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Mufasa: The Lion King | Hindi Trailer
+            </p>
+        
+            <p class="video-author">
+              Walt Disney Studios India
+            </p>
+        
+            <p class="video-stats">
+              15M views &#183; 8 days ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-63.webp">
+          <div class="video-time"> 11:28 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-63.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Priyanka Chopra's Speech Will Leave You SPEECHLESS - Best Motivation 
+            </p>
+        
+            <p class="video-author">
+              Motivation Mentors
+            </p>
+        
+            <p class="video-stats">
+              2.7M views &#183; 1 year ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-64.webp">
+          <div class="video-time"> 7:31 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-64.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Modern Family | 9 Times Lily Was Our Favourite Modern Family
+            </p>
+        
+            <p class="video-author">
+              Peacock
+            </p>
+        
+            <p class="video-stats">
+              13M views &#183; 2 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-66.webp">
+          <div class="video-time"> 3:02 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-66.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Akshath & Rovalio - Khoya (Official Music Video)
+            </p>
+        
+            <p class="video-author">
+              Akshath Acharya
+            </p>
+        
+            <p class="video-stats">
+              720K views &#183; 8 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-67.webp">
+          <div class="video-time"> 29:40 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-67.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Hilarious Comedy Of Jethalal | Taarak Mehta Ka Oolta Chashmah
+            </p>
+        
+            <p class="video-author">
+              Sony SAB
+            </p>
+        
+            <p class="video-stats">
+              33MK views &#183; 7 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-68.webp">
+          <div class="video-time"> 4:36 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-68.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Chal Diye Tum Kaha
+            </p>
+        
+            <p class="video-author">
+              Release - Topic
+            </p>
+        
+            <p class="video-stats">
+              838K views &#183; 1 month ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-69.webp">
+          <div class="video-time"> 2:12:36 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-69.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              URI: The Surgical Strike | Full Movie HD | Independence Day Special
+            </p>
+        
+            <p class="video-author">
+              HeyAnushka
+            </p>
+        
+            <p class="video-stats">
+              82K views &#183; 3 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-70.webp">
+          <div class="video-time"> 4:49 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-70.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Tu Hain Toh - Lyric Video | Mr. & Mrs. Mahi | Rajkumar, Janhvi
+            </p>
+        
+            <p class="video-author">
+              SonyMusicIndiaVEVO
+            </p>
+        
+            <p class="video-stats">
+              11M views &#183; 2 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-71.webp">
+          <div class="video-time"> 25:11 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-71.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Jake and Amy from FIERCE rivals to the PERFECT couple
+            </p>
+        
+            <p class="video-author">
+              Brooklyn Nine-Nine
+            </p>
+        
+            <p class="video-stats">
+              512K views &#183; 3 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-72.webp">
+          <div class="video-time"> 1:42:06 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-72.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Megastar Yash Soni
+            </p>
+        
+            <p class="video-author">
+              Jay Thadeshwar
+            </p>
+        
+            <p class="video-stats">
+              52K views &#183; 1 month ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-73.webp">
+          <div class="video-time"> 21:14:42 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-73.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Frontend Web Development Bootcamp Course (Javascript, HTML, CSS)
+            </p>
+        
+            <p class="video-author">
+              freeCodeCamp.org
+            </p>
+        
+            <p class="video-stats">
+              2.8M views &#183; 1 year ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-74.webp">
+          <div class="video-time"> 12:37 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-74.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Trust me when I fall in love you'll know - The Office US
+            </p>
+        
+            <p class="video-author">
+              The Office
+            </p>
+        
+            <p class="video-stats">
+              1.1M views &#183; 11 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-75.webp">
+          <div class="video-time"> 24:57 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-75.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Dice Media | Adulting | Web Series | S01E01 - Broke AF
+            </p>
+        
+            <p class="video-author">
+              Dice Media
+            </p>
+        
+            <p class="video-stats">
+              19M views &#183; 6 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-76.webp">
+          <div class="video-time"> 2:01:03 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-76.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Ahmedabad to America | PASSPORT FULL MOVIE 
+            </p>
+        
+            <p class="video-author">
+              Shemaroo Gujarati Manoranjan
+            </p>
+        
+            <p class="video-stats">
+              1.6M views &#183; 1 year ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-77.webp">
+          <div class="video-time"> 10:02 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-77.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              TUM PREM HO | BEST HINDI LOVE SONG | RADHA KRISHNA SONG
+            </p>
+        
+            <p class="video-author">
+              Krishna Sandhesh Official
+            </p>
+        
+            <p class="video-stats">
+              5.6M views &#183; 1 year ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-78.webp">
+          <div class="video-time"> 4:17 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-78.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              DILJANIYA | Sonu Nigam | Rohan Rohan | Official Music Video
+            </p>
+        
+            <p class="video-author">
+              RVCJ Media
+            </p>
+        
+            <p class="video-stats">
+              1.8M views &#183; 3 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-79.webp">
+          <div class="video-time"> 1:22:20 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-79.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Shraddha Kapoor, Rajkummar Rao Ne Stree 2, Bollywood Mein Nepotism
+            </p>
+        
+            <p class="video-author">
+              The Lallantop
+            </p>
+        
+            <p class="video-stats">
+              531K views &#183; 3 days ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-80.webp">
+          <div class="video-time"> 4:07:30 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-80.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Learn HTML - Full Tutorial for Beginners (2022)
+            </p>
+        
+            <p class="video-author">
+              freeCodeCamp.org
+            </p>
+        
+            <p class="video-stats">
+              2.8M views &#183; 2 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-81.webp">
+          <div class="video-time"> 4:25 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-81.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              FilterCopy Vs. Vicky Kaushal | YOLO: You Only Laugh Once
+            </p>
+        
+            <p class="video-author">
+              FilterCopy
+            </p>
+        
+            <p class="video-stats">
+              1M views &#183; 1 month ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-82.webp">
+          <div class="video-time"> 8:05 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-82.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Super Easy Animated Background with HTML & CSS!
+            </p>
+        
+            <p class="video-author">
+              How to Web Dev
+            </p>
+        
+            <p class="video-stats">
+              974 views &#183; 2 weeks ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-83.webp">
+          <div class="video-time"> 10:57 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-83.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Maa Ko Gussa Kyun Aate Hai
+            </p>
+        
+            <p class="video-author">
+              MostlySane
+            </p>
+        
+            <p class="video-stats">
+              3.8M views &#183; 4 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-84.webp">
+          <div class="video-time"> 21:36 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-84.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              What's Your ENGLISH LEVEL? Take This Test!
+            </p>
+        
+            <p class="video-author">
+              Aleena Rais Live
+            </p>
+        
+            <p class="video-stats">
+              121K views &#183; 12 days ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-85.webp">
+          <div class="video-time"> 3:35 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-85.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              From Zero to Hero: HTML Form for beginners | Full Tutorial
+            </p>
+        
+            <p class="video-author">
+              Maryam Tutorials
+            </p>
+        
+            <p class="video-stats">
+              1.6K views &#183; 12 days ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-86.webp">
+          <div class="video-time"> 9:51 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-86.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Twin Flames - A Romantic Short Film
+            </p>
+        
+            <p class="video-author">
+              The Storygraphers
+            </p>
+        
+            <p class="video-stats">
+              857K views &#183; 9 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-87.webp">
+          <div class="video-time"> 23:08 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-87.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              MY JEWELLERY COLLECTION | Sana Grover
+            </p>
+        
+            <p class="video-author">
+              Sana Grover
+            </p>
+        
+            <p class="video-stats">
+              58K views &#183; 5 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-88.webp">
+          <div class="video-time"> 6:09 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-88.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+             Sriti Jha Narrates What Being An Asexual Is Like
+            </p>
+        
+            <p class="video-author">
+              Brut India
+            </p>
+        
+            <p class="video-stats">
+              2.1M views &#183; 3 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-89.webp">
+          <div class="video-time"> 27:08 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-89.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              CUBES 2 | CAT Exam Preparation 2024 | Logical Reasoning
+            </p>
+        
+            <p class="video-author">
+              Rodha
+            </p>
+        
+            <p class="video-stats">
+              241K views &#183; 6 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-90.webp">
+          <div class="video-time"> 23:59 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-90.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Top 15 Rom-com boooks to binge on! | Binge-worthy Romance Novels
+            </p>
+        
+            <p class="video-author">
+              Anchal Rani
+            </p>
+        
+            <p class="video-stats">
+              16K views &#183; 1 year ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-91.webp">
+          <div class="video-time"> 5:56 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-91.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Never Have I Ever: The 14 Best Burns From Season 1
+            </p>
+        
+            <p class="video-author">
+              Netflix Is A Joke
+            </p>
+        
+            <p class="video-stats">
+              1.9M views &#183; 3 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-92.webp">
+          <div class="video-time"> 1:03:25 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-92.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              CLAT 2025: Daily The Hindu Newspaper Analysis | 12 August
+            </p>
+        
+            <p class="video-author">
+              Law Prep Tutorial - The CLAT Toppers
+            </p>
+        
+            <p class="video-stats">
+              1.5K views &#183; Streamed 8 days ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-93.webp">
+          <div class="video-time"> 11:20 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-93.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              We Tried Food From India's Best Restaurant | Ok Tested
+            </p>
+        
+            <p class="video-author">
+              OK Tested
+            </p>
+        
+            <p class="video-stats">
+              867K views &#183; 10 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-94.webp">
+          <div class="video-time"> 7:06</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-94.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Samsung Galaxy A15 5G and Tricks in Hindi 
+            </p>
+        
+            <p class="video-author">
+              Suman Features
+            </p>
+        
+            <p class="video-stats">
+              49K views &#183; 7 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-95.webp">
+          <div class="video-time"> 21:59 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-95.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Hostel Essentaisl For Girls (hostel must haves)
+            </p>
+        
+            <p class="video-author">
+              Teethi's Studio
+            </p>
+        
+            <p class="video-stats">
+              127K views &#183; 1 year ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-96.webp">
+          <div class="video-time"> 7:41 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-96.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Viscosity Part A
+            </p>
+        
+            <p class="video-author">
+              NHEI
+            </p>
+        
+            <p class="video-stats">
+              4.1K views &#183; 4 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-97.webp">
+          <div class="video-time"> 5:09 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-97.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              3 tips on how to study effectively
+            </p>
+        
+            <p class="video-author">
+              TED-Ed
+            </p>
+        
+            <p class="video-stats">
+              3.9M views &#183; 10 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-98.webp">
+          <div class="video-time"> 38:23 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-98.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Financial Statement Analysis Clss 12 Accountancy | Comparative Statements
+            </p>
+        
+            <p class="video-author">
+              Commerce Adda247
+            </p>
+        
+            <p class="video-stats">
+              181 views &#183; Streamed 13 days ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-99.webp">
+          <div class="video-time"> 43:49 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-99.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Reviewing EVERY Samsung Galaxy S Ever!
+            </p>
+        
+            <p class="video-author">
+              Marques Brownlee
+            </p>
+        
+            <p class="video-stats">
+              4.1M views &#183; 5 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-100.webp">
+          <div class="video-time"> 1:00:50 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-100.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Gamma & Beta Functions
+            </p>
+        
+            <p class="video-author">
+              Study with us
+            </p>
+        
+            <p class="video-stats">
+              183K views &#183; 8 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+  
+        <div class="thumbnail-row">
+          <img class="thumbnail"src="thumbnails/thumbnail-101.webp">
+          <div class="video-time"> 40:29 </div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channels/channel-101.jpg">
+          </div>
+      
+          <div class="video-info">
+            <p class="video-title">
+              Ikigai Full Audiobook [Hindi] | audiobooks full length, Chapter wise
+            </p>
+        
+            <p class="video-author">
+              Chapter Chat
+            </p>
+        
+            <p class="video-stats">
+              702K views &#183; 1 year ago
+            </p> -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
